@@ -5,13 +5,14 @@ import styles from "./tooltip.module.css";
 class Tooltip extends React.Component {
   constructor(props) {
     super(props);
+    this.tooltip = React.createRef();
     this.state = {
       opacity: false,
       toggle: this.toggle.bind(this)
     };
   }
   toggle = () => {
-    const tooltipNode = ReactDOM.findDOMNode(this);
+    const tooltipNode = this.tooltip.current;
     this.setState({
       opacity: !this.state.opacity,
       top: tooltipNode.offsetTop,
@@ -29,7 +30,7 @@ class Tooltip extends React.Component {
         (this.state.left || 0) - (this.state.msgSize || 0) / 2 + (this.state.width || 0) / 2
     };
     return (
-      <div>
+      <div ref={this.tooltip}>
         <span onMouseEnter={this.toggle} onMouseOut={this.toggle}>
           {this.props.children}
         </span>
