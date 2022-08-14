@@ -26,7 +26,7 @@ class Tooltip extends React.Component {
       opacity: +this.state.opacity,
       top: (this.state.top || 0) + 20,
       left:
-        (this.state.left || 0) - this.state.msgSize / 2 + this.state.width / 2
+        (this.state.left || 0) - (this.state.msgSize || 0) / 2 + (this.state.width || 0) / 2
     };
     return (
       <div>
