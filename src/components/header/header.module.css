@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: #fff;
+  padding: 0.25em 0.5em;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+span {
+  cursor: pointer;
+}

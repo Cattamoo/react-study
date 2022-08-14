@@ -1,0 +1,12 @@
+.link {
+  flex: 1;
+  background-color: #111;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.link:hover {
+  color: #fd7;
+}

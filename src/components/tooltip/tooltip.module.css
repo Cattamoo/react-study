@@ -1,0 +1,28 @@
+.tooltip {
+  position: absolute;
+}
+
+.tooltipArrow {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  left: calc(50% - 5px);
+}
+
+.bottom .tooltipArrow {
+  border-bottom: 10px solid transparent;
+}
+
+.top .tooltipArrow {
+  border-top: 10px solid transparent;
+}
+
+.tooltipInner {
+  border-radius: 0.25em;
+  background-color: transparent;
+  padding: 0.25em 0.5em;
+  color: transparent;
+  max-width: 100px;
+}

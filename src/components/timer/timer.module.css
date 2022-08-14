@@ -1,0 +1,55 @@
+.timerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555;
+  color: #ddd;
+  font-size: 3rem;
+}
+.complete {
+  animation: complete 0.5s infinite;
+}
+
+@keyframes complete {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: green;
+  }
+  60% {
+    background-color: blue;
+  }
+  75% {
+    background-color: navy;
+  }
+  90% {
+    background-color: purple;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0.1em 0.25em;
+}
+
+.timerBtn {
+  padding: 0.1em 0.25em;
+  margin: 0.1em;
+  border-radius: 0.25em;
+  border: solid 1px #fff;
+  font-size: 0.75rem;
+  background-color: #111;
+  color: #aaa;
+}
+.timerBtn:hover {
+  background-color: #fff;
+  color: #111;
+}
